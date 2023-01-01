@@ -1,0 +1,41 @@
+<!-- 
+ File: app.component.html
+ * Author: Serényi Zsolt Ödön
+ * Copyright: 2022, Serényi Zsolt Ödön
+ * Group: Szoft_II_N
+ * Date: 2023-01-01
+ * Github: https://github.com/OneBoyTwoGirl/
+ * Licenc: GNU GPL
+ -->
+<h1>Városok adatai</h1>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Név</th>
+
+      <th>Megye</th>
+
+      <th>Terület (km²)</th>
+
+      <th>Népesség (fő)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of containtSettlementArray">
+      <td>{{i.name}}</td>
+
+      <td>{{i.county}}</td>
+
+      <td>{{i.area}}</td>
+
+      <td>{{i.population}}</td>
+
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="alert alert-success" role="alert">
+  
+  Serényi Zsolt Ödön, Szoft_II_N, 2023-01-01.
+</div>
